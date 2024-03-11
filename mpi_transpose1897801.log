@@ -1,0 +1,13 @@
+Date = Пн мар 11 22:45:17 MSK 2024
+Host = cn-030
+WorkDir = /home/admitrakova
+
+Number of Nodes Allocated = 1
+Number of Tasks Allocated = 4
+Numbers of Cores/Task Allocated = 1
+Введите размеры матрицы (m, n): 
+Введите элементы матрицы (1000, 10000):
+
+
+Параллельное транспанирование матриц: 4-process.
+Время выполнения: 0.3318 s

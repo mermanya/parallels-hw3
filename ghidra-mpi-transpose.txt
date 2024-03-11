@@ -1,0 +1,330 @@
+                             **************************************************************
+                             *                          FUNCTION                          *
+                             **************************************************************
+                             undefined main()
+             undefined         AL:1           <RETURN>
+             undefined8        Stack[-0x10]:8 local_10                                XREF[4]:     00400bbb(W), 
+                                                                                                   00400c27(R), 
+                                                                                                   00400caf(R), 
+                                                                                                   00400d3a(R)  
+             undefined8        Stack[-0x18]:8 local_18                                XREF[2]:     00400bd6(W), 
+                                                                                                   00400d59(R)  
+             undefined4        Stack[-0x1c]:4 local_1c                                XREF[4]:     00400bf1(W), 
+                                                                                                   00400bfb(R), 
+                                                                                                   00400c12(R), 
+                                                                                                   00400c46(RW)  
+             undefined4        Stack[-0x20]:4 local_20                                XREF[4]:     00400c00(W), 
+                                                                                                   00400c0a(R), 
+                                                                                                   00400c18(R), 
+                                                                                                   00400c40(RW)  
+             undefined4        Stack[-0x24]:4 local_24                                XREF[3]:     00400cef(W), 
+                                                                                                   00400d02(W), 
+                                                                                                   00400d0e(R)  
+             undefined4        Stack[-0x28]:4 local_28                                XREF[5]:     00400d08(W), 
+                                                                                                   00400d0b(R), 
+                                                                                                   00400d25(R), 
+                                                                                                   00400d4a(R), 
+                                                                                                   00400d6e(RW)  
+             undefined4        Stack[-0x2c]:4 local_2c                                XREF[5]:     00400d13(W), 
+                                                                                                   00400d1d(R), 
+                                                                                                   00400d2b(R), 
+                                                                                                   00400d44(R), 
+                                                                                                   00400d68(RW)  
+             undefined4        Stack[-0x30]:4 local_30                                XREF[2]:     00400c5f(W), 
+                                                                                                   00400d8e(R)  
+             undefined4        Stack[-0x34]:4 local_34                                XREF[3]:     00400cd4(W), 
+                                                                                                   00400cda(R), 
+                                                                                                   00400ce9(R)  
+             undefined4        Stack[-0x38]:4 local_38                                XREF[2]:     00400ce0(W), 
+                                                                                                   00400d05(R)  
+             undefined4        Stack[-0x3c]:4 local_3c                                XREF[9]:     00400b84(*), 
+                                                                                                   00400ba4(R), 
+                                                                                                   00400bbf(R), 
+                                                                                                   00400bdd(R), 
+                                                                                                   00400bf8(R), 
+                                                                                                   00400c62(*), 
+                                                                                                   00400ca4(R), 
+                                                                                                   00400ccb(R), 
+                                                                                                   00400cff(R)  
+             undefined4        Stack[-0x40]:4 local_40                                XREF[11]:    00400b80(*), 
+                                                                                                   00400ba7(R), 
+                                                                                                   00400bc2(R), 
+                                                                                                   00400bda(R), 
+                                                                                                   00400c07(R), 
+                                                                                                   00400c0f(R), 
+                                                                                                   00400c83(*), 
+                                                                                                   00400ca7(R), 
+                                                                                                   00400d1a(R), 
+                                                                                                   00400d22(R), 
+                                                                                                   00400d41(R)  
+             undefined4        Stack[-0x44]:4 local_44                                XREF[4]:     00400b44(*), 
+                                                                                                   00400cce(R), 
+                                                                                                   00400cf2(R), 
+                                                                                                   00400d9b(R)  
+             undefined4        Stack[-0x48]:4 local_48                                XREF[6]:     00400b55(*), 
+                                                                                                   00400b66(R), 
+                                                                                                   00400cd7(R), 
+                                                                                                   00400ce3(R), 
+                                                                                                   00400cf8(R), 
+                                                                                                   00400d7e(R)  
+             undefined4        Stack[-0x4c]:4 local_4c                                XREF[2]:     00400b2a(W), 
+                                                                                                   00400b35(*)  
+             undefined8        Stack[-0x58]:8 local_58                                XREF[2]:     00400b2d(W), 
+                                                                                                   00400b31(*)  
+                             main                                            XREF[4]:     Entry Point(*), 
+                                                                                          _start:00400a6d(*), 00400f70, 
+                                                                                          00401000(*)  
+        00400b22 55              PUSH       RBP
+        00400b23 48 89 e5        MOV        RBP,RSP
+        00400b26 48 83 ec 50     SUB        RSP,0x50
+        00400b2a 89 7d bc        MOV        dword ptr [RBP + local_4c],EDI
+        00400b2d 48 89 75 b0     MOV        qword ptr [RBP + local_58],RSI
+        00400b31 48 8d 55 b0     LEA        RDX=>local_58,[RBP + -0x50]
+        00400b35 48 8d 45 bc     LEA        RAX=>local_4c,[RBP + -0x44]
+        00400b39 48 89 d6        MOV        RSI,RDX
+        00400b3c 48 89 c7        MOV        RDI,RAX
+        00400b3f e8 cc fe        CALL       <EXTERNAL>::MPI_Init                             undefined MPI_Init()
+                 ff ff
+        00400b44 48 8d 45 c4     LEA        RAX=>local_44,[RBP + -0x3c]
+        00400b48 48 89 c6        MOV        RSI,RAX
+        00400b4b bf a0 20        MOV        EDI,ompi_mpi_comm_world
+                 60 00
+        00400b50 e8 5b fe        CALL       <EXTERNAL>::MPI_Comm_size                        undefined MPI_Comm_size()
+                 ff ff
+        00400b55 48 8d 45 c0     LEA        RAX=>local_48,[RBP + -0x40]
+        00400b59 48 89 c6        MOV        RSI,RAX
+        00400b5c bf a0 20        MOV        EDI,ompi_mpi_comm_world
+                 60 00
+        00400b61 e8 9a fe        CALL       <EXTERNAL>::MPI_Comm_rank                        undefined MPI_Comm_rank()
+                 ff ff
+        00400b66 8b 45 c0        MOV        EAX,dword ptr [RBP + local_48]
+        00400b69 85 c0           TEST       EAX,EAX
+        00400b6b 0f 85 e5        JNZ        LAB_00400c56
+                 00 00 00
+        00400b71 bf 48 0e        MOV        EDI,DAT_00400e48                                 = D0h
+                 40 00
+        00400b76 b8 00 00        MOV        EAX,0x0
+                 00 00
+        00400b7b e8 f0 fd        CALL       <EXTERNAL>::printf                               int printf(char * __format, ...)
+                 ff ff
+        00400b80 48 8d 55 c8     LEA        RDX=>local_40,[RBP + -0x38]
+        00400b84 48 8d 45 cc     LEA        RAX=>local_3c,[RBP + -0x34]
+        00400b88 48 89 c6        MOV        RSI,RAX
+        00400b8b bf 7e 0e        MOV        EDI,DAT_00400e7e                                 = 25h    %
+                 40 00
+        00400b90 b8 00 00        MOV        EAX,0x0
+                 00 00
+        00400b95 e8 36 fe        CALL       <EXTERNAL>::scanf                                int scanf(char * __format, ...)
+                 ff ff
+        00400b9a bf 0a 00        MOV        EDI,0xa
+                 00 00
+        00400b9f e8 4c fe        CALL       <EXTERNAL>::putchar                              int putchar(int __c)
+                 ff ff
+        00400ba4 8b 55 cc        MOV        EDX,dword ptr [RBP + local_3c]
+        00400ba7 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400baa 0f af c2        IMUL       EAX,EDX
+        00400bad 48 98           CDQE
+        00400baf 48 c1 e0 03     SHL        RAX,0x3
+        00400bb3 48 89 c7        MOV        RDI,RAX
+        00400bb6 e8 25 fe        CALL       <EXTERNAL>::malloc                               void * malloc(size_t __size)
+                 ff ff
+        00400bbb 48 89 45 f8     MOV        qword ptr [RBP + local_10],RAX
+        00400bbf 8b 55 cc        MOV        EDX,dword ptr [RBP + local_3c]
+        00400bc2 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400bc5 0f af c2        IMUL       EAX,EDX
+        00400bc8 48 98           CDQE
+        00400bca 48 c1 e0 03     SHL        RAX,0x3
+        00400bce 48 89 c7        MOV        RDI,RAX
+        00400bd1 e8 0a fe        CALL       <EXTERNAL>::malloc                               void * malloc(size_t __size)
+                 ff ff
+        00400bd6 48 89 45 f0     MOV        qword ptr [RBP + local_18],RAX
+        00400bda 8b 55 c8        MOV        EDX,dword ptr [RBP + local_40]
+        00400bdd 8b 45 cc        MOV        EAX,dword ptr [RBP + local_3c]
+        00400be0 89 c6           MOV        ESI,EAX
+        00400be2 bf 88 0e        MOV        EDI,DAT_00400e88                                 = D0h
+                 40 00
+        00400be7 b8 00 00        MOV        EAX,0x0
+                 00 00
+        00400bec e8 7f fd        CALL       <EXTERNAL>::printf                               int printf(char * __format, ...)
+                 ff ff
+        00400bf1 c7 45 ec        MOV        dword ptr [RBP + local_1c],0x0
+                 00 00 00 00
+                             LAB_00400bf8                                    XREF[1]:     00400c4a(j)  
+        00400bf8 8b 45 cc        MOV        EAX,dword ptr [RBP + local_3c]
+        00400bfb 39 45 ec        CMP        dword ptr [RBP + local_1c],EAX
+        00400bfe 7d 4c           JGE        LAB_00400c4c
+        00400c00 c7 45 e8        MOV        dword ptr [RBP + local_20],0x0
+                 00 00 00 00
+                             LAB_00400c07                                    XREF[1]:     00400c44(j)  
+        00400c07 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400c0a 39 45 e8        CMP        dword ptr [RBP + local_20],EAX
+        00400c0d 7d 37           JGE        LAB_00400c46
+        00400c0f 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400c12 0f af 45 ec     IMUL       EAX,dword ptr [RBP + local_1c]
+        00400c16 89 c2           MOV        EDX,EAX
+        00400c18 8b 45 e8        MOV        EAX,dword ptr [RBP + local_20]
+        00400c1b 01 d0           ADD        EAX,EDX
+        00400c1d 48 98           CDQE
+        00400c1f 48 8d 14        LEA        RDX,[RAX*0x8]
+                 c5 00 00 
+                 00 00
+        00400c27 48 8b 45 f8     MOV        RAX,qword ptr [RBP + local_10]
+        00400c2b 48 01 d0        ADD        RAX,RDX
+        00400c2e 48 89 c6        MOV        RSI,RAX
+        00400c31 bf c2 0e        MOV        EDI,DAT_00400ec2                                 = 25h    %
+                 40 00
+        00400c36 b8 00 00        MOV        EAX,0x0
+                 00 00
+        00400c3b e8 90 fd        CALL       <EXTERNAL>::scanf                                int scanf(char * __format, ...)
+                 ff ff
+        00400c40 83 45 e8 01     ADD        dword ptr [RBP + local_20],0x1
+        00400c44 eb c1           JMP        LAB_00400c07
+                             LAB_00400c46                                    XREF[1]:     00400c0d(j)  
+        00400c46 83 45 ec 01     ADD        dword ptr [RBP + local_1c],0x1
+        00400c4a eb ac           JMP        LAB_00400bf8
+                             LAB_00400c4c                                    XREF[1]:     00400bfe(j)  
+        00400c4c bf c7 0e        MOV        EDI,DAT_00400ec7                                 = 0Ah
+                 40 00
+        00400c51 e8 ca fd        CALL       <EXTERNAL>::puts                                 int puts(char * __s)
+                 ff ff
+                             LAB_00400c56                                    XREF[1]:     00400b6b(j)  
+        00400c56 e8 65 fd        CALL       <EXTERNAL>::MPI_Wtime                            undefined MPI_Wtime()
+                 ff ff
+        00400c5b f2 0f 2c c0     CVTTSD2SI  EAX,XMM0
+        00400c5f 89 45 d8        MOV        dword ptr [RBP + local_30],EAX
+        00400c62 48 8d 45 cc     LEA        RAX=>local_3c,[RBP + -0x34]
+        00400c66 41 b8 a0        MOV        R8D,ompi_mpi_comm_world
+                 20 60 00
+        00400c6c b9 00 00        MOV        ECX,0x0
+                 00 00
+        00400c71 ba a0 24        MOV        EDX,ompi_mpi_int
+                 60 00
+        00400c76 be 01 00        MOV        ESI,0x1
+                 00 00
+        00400c7b 48 89 c7        MOV        RDI,RAX
+        00400c7e e8 fd fc        CALL       <EXTERNAL>::MPI_Bcast                            undefined MPI_Bcast()
+                 ff ff
+        00400c83 48 8d 45 c8     LEA        RAX=>local_40,[RBP + -0x38]
+        00400c87 41 b8 a0        MOV        R8D,ompi_mpi_comm_world
+                 20 60 00
+        00400c8d b9 00 00        MOV        ECX,0x0
+                 00 00
+        00400c92 ba a0 24        MOV        EDX,ompi_mpi_int
+                 60 00
+        00400c97 be 01 00        MOV        ESI,0x1
+                 00 00
+        00400c9c 48 89 c7        MOV        RDI,RAX
+        00400c9f e8 dc fc        CALL       <EXTERNAL>::MPI_Bcast                            undefined MPI_Bcast()
+                 ff ff
+        00400ca4 8b 55 cc        MOV        EDX,dword ptr [RBP + local_3c]
+        00400ca7 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400caa 89 d6           MOV        ESI,EDX
+        00400cac 0f af f0        IMUL       ESI,EAX
+        00400caf 48 8b 45 f8     MOV        RAX,qword ptr [RBP + local_10]
+        00400cb3 41 b8 a0        MOV        R8D,ompi_mpi_comm_world
+                 20 60 00
+        00400cb9 b9 00 00        MOV        ECX,0x0
+                 00 00
+        00400cbe ba a0 22        MOV        EDX,ompi_mpi_double
+                 60 00
+        00400cc3 48 89 c7        MOV        RDI,RAX
+        00400cc6 e8 b5 fc        CALL       <EXTERNAL>::MPI_Bcast                            undefined MPI_Bcast()
+                 ff ff
+        00400ccb 8b 45 cc        MOV        EAX,dword ptr [RBP + local_3c]
+        00400cce 8b 4d c4        MOV        ECX,dword ptr [RBP + local_44]
+        00400cd1 99              CDQ
+        00400cd2 f7 f9           IDIV       ECX
+        00400cd4 89 45 d4        MOV        dword ptr [RBP + local_34],EAX
+        00400cd7 8b 45 c0        MOV        EAX,dword ptr [RBP + local_48]
+        00400cda 8b 55 d4        MOV        EDX,dword ptr [RBP + local_34]
+        00400cdd 0f af c2        IMUL       EAX,EDX
+        00400ce0 89 45 d0        MOV        dword ptr [RBP + local_38],EAX
+        00400ce3 8b 45 c0        MOV        EAX,dword ptr [RBP + local_48]
+        00400ce6 8d 50 01        LEA        EDX,[RAX + 0x1]
+        00400ce9 8b 45 d4        MOV        EAX,dword ptr [RBP + local_34]
+        00400cec 0f af c2        IMUL       EAX,EDX
+        00400cef 89 45 e4        MOV        dword ptr [RBP + local_24],EAX
+        00400cf2 8b 45 c4        MOV        EAX,dword ptr [RBP + local_44]
+        00400cf5 8d 50 ff        LEA        EDX,[RAX + -0x1]
+        00400cf8 8b 45 c0        MOV        EAX,dword ptr [RBP + local_48]
+        00400cfb 39 c2           CMP        EDX,EAX
+        00400cfd 75 06           JNZ        LAB_00400d05
+        00400cff 8b 45 cc        MOV        EAX,dword ptr [RBP + local_3c]
+        00400d02 89 45 e4        MOV        dword ptr [RBP + local_24],EAX
+                             LAB_00400d05                                    XREF[1]:     00400cfd(j)  
+        00400d05 8b 45 d0        MOV        EAX,dword ptr [RBP + local_38]
+        00400d08 89 45 e0        MOV        dword ptr [RBP + local_28],EAX
+                             LAB_00400d0b                                    XREF[1]:     00400d72(j)  
+        00400d0b 8b 45 e0        MOV        EAX,dword ptr [RBP + local_28]
+        00400d0e 3b 45 e4        CMP        EAX,dword ptr [RBP + local_24]
+        00400d11 7d 61           JGE        LAB_00400d74
+        00400d13 c7 45 dc        MOV        dword ptr [RBP + local_2c],0x0
+                 00 00 00 00
+                             LAB_00400d1a                                    XREF[1]:     00400d6c(j)  
+        00400d1a 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400d1d 39 45 dc        CMP        dword ptr [RBP + local_2c],EAX
+        00400d20 7d 4c           JGE        LAB_00400d6e
+        00400d22 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400d25 0f af 45 e0     IMUL       EAX,dword ptr [RBP + local_28]
+        00400d29 89 c2           MOV        EDX,EAX
+        00400d2b 8b 45 dc        MOV        EAX,dword ptr [RBP + local_2c]
+        00400d2e 01 d0           ADD        EAX,EDX
+        00400d30 48 98           CDQE
+        00400d32 48 8d 14        LEA        RDX,[RAX*0x8]
+                 c5 00 00 
+                 00 00
+        00400d3a 48 8b 45 f8     MOV        RAX,qword ptr [RBP + local_10]
+        00400d3e 48 01 c2        ADD        RDX,RAX
+        00400d41 8b 45 c8        MOV        EAX,dword ptr [RBP + local_40]
+        00400d44 0f af 45 dc     IMUL       EAX,dword ptr [RBP + local_2c]
+        00400d48 89 c1           MOV        ECX,EAX
+        00400d4a 8b 45 e0        MOV        EAX,dword ptr [RBP + local_28]
+        00400d4d 01 c8           ADD        EAX,ECX
+        00400d4f 48 98           CDQE
+        00400d51 48 8d 0c        LEA        RCX,[RAX*0x8]
+                 c5 00 00 
+                 00 00
+        00400d59 48 8b 45 f0     MOV        RAX,qword ptr [RBP + local_18]
+        00400d5d 48 01 c8        ADD        RAX,RCX
+        00400d60 f2 0f 10 02     MOVSD      XMM0,qword ptr [RDX]
+        00400d64 f2 0f 11 00     MOVSD      qword ptr [RAX],XMM0
+        00400d68 83 45 dc 01     ADD        dword ptr [RBP + local_2c],0x1
+        00400d6c eb ac           JMP        LAB_00400d1a
+                             LAB_00400d6e                                    XREF[1]:     00400d20(j)  
+        00400d6e 83 45 e0 01     ADD        dword ptr [RBP + local_28],0x1
+        00400d72 eb 97           JMP        LAB_00400d0b
+                             LAB_00400d74                                    XREF[1]:     00400d11(j)  
+        00400d74 bf a0 20        MOV        EDI,ompi_mpi_comm_world
+                 60 00
+        00400d79 e8 12 fc        CALL       <EXTERNAL>::MPI_Barrier                          undefined MPI_Barrier()
+                 ff ff
+        00400d7e 8b 45 c0        MOV        EAX,dword ptr [RBP + local_48]
+        00400d81 85 c0           TEST       EAX,EAX
+        00400d83 75 2a           JNZ        LAB_00400daf
+        00400d85 e8 36 fc        CALL       <EXTERNAL>::MPI_Wtime                            undefined MPI_Wtime()
+                 ff ff
+        00400d8a 66 0f 28 c8     MOVAPD     XMM1,XMM0
+        00400d8e f2 0f 2a        CVTSI2SD   XMM0,dword ptr [RBP + local_30]
+                 45 d8
+        00400d93 f2 0f 5c c8     SUBSD      XMM1,XMM0
+        00400d97 66 0f 28 c1     MOVAPD     XMM0,XMM1
+        00400d9b 8b 45 c4        MOV        EAX,dword ptr [RBP + local_44]
+        00400d9e 89 c6           MOV        ESI,EAX
+        00400da0 bf d0 0e        MOV        EDI,DAT_00400ed0                                 = D0h
+                 40 00
+        00400da5 b8 01 00        MOV        EAX,0x1
+                 00 00
+        00400daa e8 c1 fb        CALL       <EXTERNAL>::printf                               int printf(char * __format, ...)
+                 ff ff
+                             LAB_00400daf                                    XREF[1]:     00400d83(j)  
+        00400daf e8 ec fb        CALL       <EXTERNAL>::MPI_Finalize                         undefined MPI_Finalize()
+                 ff ff
+        00400db4 b8 00 00        MOV        EAX,0x0
+                 00 00
+        00400db9 c9              LEAVE
+        00400dba c3              RET
+        00400dbb 0f              ??         0Fh
+        00400dbc 1f              ??         1Fh
+        00400dbd 44              ??         44h    D
+        00400dbe 00              ??         00h
+        00400dbf 00              ??         00h

@@ -1,0 +1,247 @@
+                             **************************************************************
+                             *                          FUNCTION                          *
+                             **************************************************************
+                             undefined main()
+             undefined         AL:1           <RETURN>
+             undefined4        Stack[-0xc]:4  local_c                                 XREF[4]:     00400781(W), 
+                                                                                                   0040078b(R), 
+                                                                                                   004007a2(R), 
+                                                                                                   004007d6(RW)  
+             undefined4        Stack[-0x10]:4 local_10                                XREF[4]:     00400790(W), 
+                                                                                                   0040079a(R), 
+                                                                                                   004007a8(R), 
+                                                                                                   004007d0(RW)  
+             undefined8        Stack[-0x18]:8 local_18                                XREF[3]:     0040074b(W), 
+                                                                                                   004007b7(R), 
+                                                                                                   004007fc(R)  
+             undefined8        Stack[-0x20]:8 local_20                                XREF[2]:     00400766(W), 
+                                                                                                   004007f8(R)  
+             undefined4        Stack[-0x24]:4 local_24                                XREF[2]:     004007ef(W), 
+                                                                                                   00400810(R)  
+             undefined4        Stack[-0x28]:4 local_28                                XREF[6]:     00400714(*), 
+                                                                                                   00400734(R), 
+                                                                                                   0040074f(R), 
+                                                                                                   0040076d(R), 
+                                                                                                   00400788(R), 
+                                                                                                   004007f5(R)  
+             undefined4        Stack[-0x2c]:4 local_2c                                XREF[7]:     00400710(*), 
+                                                                                                   00400737(R), 
+                                                                                                   00400752(R), 
+                                                                                                   0040076a(R), 
+                                                                                                   00400797(R), 
+                                                                                                   0040079f(R), 
+                                                                                                   004007f2(R)  
+             undefined4        Stack[-0x3c]:4 local_3c                                XREF[1]:     004006fa(W)  
+             undefined8        Stack[-0x48]:8 local_48                                XREF[1]:     004006fd(W)  
+                             main                                            XREF[4]:     Entry Point(*), 
+                                                                                          _start:0040063d(*), 00400a48, 
+                                                                                          00400ae0(*)  
+        004006f2 55              PUSH       RBP
+        004006f3 48 89 e5        MOV        RBP,RSP
+        004006f6 48 83 ec 40     SUB        RSP,0x40
+        004006fa 89 7d cc        MOV        dword ptr [RBP + local_3c],EDI
+        004006fd 48 89 75 c0     MOV        qword ptr [RBP + local_48],RSI
+        00400701 bf 48 09        MOV        EDI,DAT_00400948                                 = D0h
+                 40 00
+        00400706 b8 00 00        MOV        EAX,0x0
+                 00 00
+        0040070b e8 90 fe        CALL       <EXTERNAL>::printf                               int printf(char * __format, ...)
+                 ff ff
+        00400710 48 8d 55 dc     LEA        RDX=>local_2c,[RBP + -0x24]
+        00400714 48 8d 45 e0     LEA        RAX=>local_28,[RBP + -0x20]
+        00400718 48 89 c6        MOV        RSI,RAX
+        0040071b bf 7e 09        MOV        EDI,DAT_0040097e                                 = 25h    %
+                 40 00
+        00400720 b8 00 00        MOV        EAX,0x0
+                 00 00
+        00400725 e8 86 fe        CALL       <EXTERNAL>::scanf                                int scanf(char * __format, ...)
+                 ff ff
+        0040072a bf 0a 00        MOV        EDI,0xa
+                 00 00
+        0040072f e8 9c fe        CALL       <EXTERNAL>::putchar                              int putchar(int __c)
+                 ff ff
+        00400734 8b 55 e0        MOV        EDX,dword ptr [RBP + local_28]
+        00400737 8b 45 dc        MOV        EAX,dword ptr [RBP + local_2c]
+        0040073a 0f af c2        IMUL       EAX,EDX
+        0040073d 48 98           CDQE
+        0040073f 48 c1 e0 03     SHL        RAX,0x3
+        00400743 48 89 c7        MOV        RDI,RAX
+        00400746 e8 75 fe        CALL       <EXTERNAL>::malloc                               void * malloc(size_t __size)
+                 ff ff
+        0040074b 48 89 45 f0     MOV        qword ptr [RBP + local_18],RAX
+        0040074f 8b 55 e0        MOV        EDX,dword ptr [RBP + local_28]
+        00400752 8b 45 dc        MOV        EAX,dword ptr [RBP + local_2c]
+        00400755 0f af c2        IMUL       EAX,EDX
+        00400758 48 98           CDQE
+        0040075a 48 c1 e0 03     SHL        RAX,0x3
+        0040075e 48 89 c7        MOV        RDI,RAX
+        00400761 e8 5a fe        CALL       <EXTERNAL>::malloc                               void * malloc(size_t __size)
+                 ff ff
+        00400766 48 89 45 e8     MOV        qword ptr [RBP + local_20],RAX
+        0040076a 8b 55 dc        MOV        EDX,dword ptr [RBP + local_2c]
+        0040076d 8b 45 e0        MOV        EAX,dword ptr [RBP + local_28]
+        00400770 89 c6           MOV        ESI,EAX
+        00400772 bf 88 09        MOV        EDI,DAT_00400988                                 = D0h
+                 40 00
+        00400777 b8 00 00        MOV        EAX,0x0
+                 00 00
+        0040077c e8 1f fe        CALL       <EXTERNAL>::printf                               int printf(char * __format, ...)
+                 ff ff
+        00400781 c7 45 fc        MOV        dword ptr [RBP + local_c],0x0
+                 00 00 00 00
+                             LAB_00400788                                    XREF[1]:     004007da(j)  
+        00400788 8b 45 e0        MOV        EAX,dword ptr [RBP + local_28]
+        0040078b 39 45 fc        CMP        dword ptr [RBP + local_c],EAX
+        0040078e 7d 4c           JGE        LAB_004007dc
+        00400790 c7 45 f8        MOV        dword ptr [RBP + local_10],0x0
+                 00 00 00 00
+                             LAB_00400797                                    XREF[1]:     004007d4(j)  
+        00400797 8b 45 dc        MOV        EAX,dword ptr [RBP + local_2c]
+        0040079a 39 45 f8        CMP        dword ptr [RBP + local_10],EAX
+        0040079d 7d 37           JGE        LAB_004007d6
+        0040079f 8b 45 dc        MOV        EAX,dword ptr [RBP + local_2c]
+        004007a2 0f af 45 fc     IMUL       EAX,dword ptr [RBP + local_c]
+        004007a6 89 c2           MOV        EDX,EAX
+        004007a8 8b 45 f8        MOV        EAX,dword ptr [RBP + local_10]
+        004007ab 01 d0           ADD        EAX,EDX
+        004007ad 48 98           CDQE
+        004007af 48 8d 14        LEA        RDX,[RAX*0x8]
+                 c5 00 00 
+                 00 00
+        004007b7 48 8b 45 f0     MOV        RAX,qword ptr [RBP + local_18]
+        004007bb 48 01 d0        ADD        RAX,RDX
+        004007be 48 89 c6        MOV        RSI,RAX
+        004007c1 bf c2 09        MOV        EDI,DAT_004009c2                                 = 25h    %
+                 40 00
+        004007c6 b8 00 00        MOV        EAX,0x0
+                 00 00
+        004007cb e8 e0 fd        CALL       <EXTERNAL>::scanf                                int scanf(char * __format, ...)
+                 ff ff
+        004007d0 83 45 f8 01     ADD        dword ptr [RBP + local_10],0x1
+        004007d4 eb c1           JMP        LAB_00400797
+                             LAB_004007d6                                    XREF[1]:     0040079d(j)  
+        004007d6 83 45 fc 01     ADD        dword ptr [RBP + local_c],0x1
+        004007da eb ac           JMP        LAB_00400788
+                             LAB_004007dc                                    XREF[1]:     0040078e(j)  
+        004007dc bf c7 09        MOV        EDI,DAT_004009c7                                 = 0Ah
+                 40 00
+        004007e1 e8 fa fd        CALL       <EXTERNAL>::puts                                 int puts(char * __s)
+                 ff ff
+        004007e6 e8 05 fe        CALL       <EXTERNAL>::omp_get_wtime                        undefined omp_get_wtime()
+                 ff ff
+        004007eb f2 0f 2c c0     CVTTSD2SI  EAX,XMM0
+        004007ef 89 45 e4        MOV        dword ptr [RBP + local_24],EAX
+        004007f2 8b 75 dc        MOV        ESI,dword ptr [RBP + local_2c]
+        004007f5 8b 45 e0        MOV        EAX,dword ptr [RBP + local_28]
+        004007f8 48 8b 4d e8     MOV        RCX,qword ptr [RBP + local_20]
+        004007fc 48 8b 55 f0     MOV        RDX,qword ptr [RBP + local_18]
+        00400800 89 c7           MOV        EDI,EAX
+        00400802 e8 2c 00        CALL       transpose                                        undefined transpose(int param_1,
+                 00 00
+        00400807 e8 e4 fd        CALL       <EXTERNAL>::omp_get_wtime                        undefined omp_get_wtime()
+                 ff ff
+        0040080c 66 0f 28 c8     MOVAPD     XMM1,XMM0
+        00400810 f2 0f 2a        CVTSI2SD   XMM0,dword ptr [RBP + local_24]
+                 45 e4
+        00400815 f2 0f 5c c8     SUBSD      XMM1,XMM0
+        00400819 66 0f 28 c1     MOVAPD     XMM0,XMM1
+        0040081d bf d0 09        MOV        EDI,DAT_004009d0                                 = D0h
+                 40 00
+        00400822 b8 01 00        MOV        EAX,0x1
+                 00 00
+        00400827 e8 74 fd        CALL       <EXTERNAL>::printf                               int printf(char * __format, ...)
+                 ff ff
+        0040082c b8 00 00        MOV        EAX,0x0
+                 00 00
+        00400831 c9              LEAVE
+        00400832 c3              RET
+                             **************************************************************
+                             * transpose(int, int, double*, double*)                      *
+                             **************************************************************
+                             undefined __stdcall transpose(int param_1, int param_2, 
+             undefined         AL:1           <RETURN>
+             int               EDI:4          param_1
+             int               ESI:4          param_2
+             double *          RDX:8          param_3
+             double *          RCX:8          param_4
+             undefined4        Stack[-0xc]:4  local_c                                 XREF[5]:     00400845(W), 
+                                                                                                   0040084c(R), 
+                                                                                                   00400863(R), 
+                                                                                                   0040088b(R), 
+                                                                                                   004008af(RW)  
+             undefined4        Stack[-0x10]:4 local_10                                XREF[5]:     00400854(W), 
+                                                                                                   0040085b(R), 
+                                                                                                   0040086c(R), 
+                                                                                                   00400882(R), 
+                                                                                                   004008a9(RW)  
+             undefined4        Stack[-0x1c]:4 local_1c                                XREF[3]:     00400837(W), 
+                                                                                                   0040084f(R), 
+                                                                                                   00400885(R)  
+             undefined4        Stack[-0x20]:4 local_20                                XREF[3]:     0040083a(W), 
+                                                                                                   0040085e(R), 
+                                                                                                   00400866(R)  
+             undefined8        Stack[-0x28]:8 local_28                                XREF[2]:     0040083d(W), 
+                                                                                                   0040087b(R)  
+             undefined8        Stack[-0x30]:8 local_30                                XREF[2]:     00400841(W), 
+                                                                                                   0040089a(R)  
+                             _Z9transposeiiPdS_                              XREF[4]:     Entry Point(*), main:00400802(c), 
+                             transpose                                                    00400a50, 00400b00(*)  
+        00400833 55              PUSH       RBP
+        00400834 48 89 e5        MOV        RBP,RSP
+        00400837 89 7d ec        MOV        dword ptr [RBP + local_1c],param_1
+        0040083a 89 75 e8        MOV        dword ptr [RBP + local_20],param_2
+        0040083d 48 89 55 e0     MOV        qword ptr [RBP + local_28],param_3
+        00400841 48 89 4d d8     MOV        qword ptr [RBP + local_30],param_4
+        00400845 c7 45 fc        MOV        dword ptr [RBP + local_c],0x0
+                 00 00 00 00
+                             LAB_0040084c                                    XREF[1]:     004008b3(j)  
+        0040084c 8b 45 fc        MOV        EAX,dword ptr [RBP + local_c]
+        0040084f 3b 45 ec        CMP        EAX,dword ptr [RBP + local_1c]
+        00400852 7d 61           JGE        LAB_004008b5
+        00400854 c7 45 f8        MOV        dword ptr [RBP + local_10],0x0
+                 00 00 00 00
+                             LAB_0040085b                                    XREF[1]:     004008ad(j)  
+        0040085b 8b 45 f8        MOV        EAX,dword ptr [RBP + local_10]
+        0040085e 3b 45 e8        CMP        EAX,dword ptr [RBP + local_20]
+        00400861 7d 4c           JGE        LAB_004008af
+        00400863 8b 45 fc        MOV        EAX,dword ptr [RBP + local_c]
+        00400866 0f af 45 e8     IMUL       EAX,dword ptr [RBP + local_20]
+        0040086a 89 c2           MOV        param_3,EAX
+        0040086c 8b 45 f8        MOV        EAX,dword ptr [RBP + local_10]
+        0040086f 01 d0           ADD        EAX,param_3
+        00400871 48 98           CDQE
+        00400873 48 8d 14        LEA        param_3,[RAX*0x8]
+                 c5 00 00 
+                 00 00
+        0040087b 48 8b 45 e0     MOV        RAX,qword ptr [RBP + local_28]
+        0040087f 48 01 c2        ADD        param_3,RAX
+        00400882 8b 45 f8        MOV        EAX,dword ptr [RBP + local_10]
+        00400885 0f af 45 ec     IMUL       EAX,dword ptr [RBP + local_1c]
+        00400889 89 c1           MOV        param_4,EAX
+        0040088b 8b 45 fc        MOV        EAX,dword ptr [RBP + local_c]
+        0040088e 01 c8           ADD        EAX,param_4
+        00400890 48 98           CDQE
+        00400892 48 8d 0c        LEA        param_4,[RAX*0x8]
+                 c5 00 00 
+                 00 00
+        0040089a 48 8b 45 d8     MOV        RAX,qword ptr [RBP + local_30]
+        0040089e 48 01 c8        ADD        RAX,param_4
+        004008a1 f2 0f 10 02     MOVSD      XMM0,qword ptr [param_3]
+        004008a5 f2 0f 11 00     MOVSD      qword ptr [RAX],XMM0
+        004008a9 83 45 f8 01     ADD        dword ptr [RBP + local_10],0x1
+        004008ad eb ac           JMP        LAB_0040085b
+                             LAB_004008af                                    XREF[1]:     00400861(j)  
+        004008af 83 45 fc 01     ADD        dword ptr [RBP + local_c],0x1
+        004008b3 eb 97           JMP        LAB_0040084c
+                             LAB_004008b5                                    XREF[1]:     00400852(j)  
+        004008b5 90              NOP
+        004008b6 5d              POP        RBP
+        004008b7 c3              RET
+        004008b8 0f              ??         0Fh
+        004008b9 1f              ??         1Fh
+        004008ba 84              ??         84h
+        004008bb 00              ??         00h
+        004008bc 00              ??         00h
+        004008bd 00              ??         00h
+        004008be 00              ??         00h
+        004008bf 00              ??         00h
